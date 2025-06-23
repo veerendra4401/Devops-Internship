@@ -31,8 +31,8 @@ A modern, production-ready microservices demo showcasing Nginx reverse proxy wit
 
 1. **Clone & Build**
    ```bash
-   git clone <your-repo>
-   cd <your-repo>
+   git clone https://github.com/veerendra4401/Devops-Internship.git
+   cd Devops-Internship
    docker-compose up --build
    ```
 
