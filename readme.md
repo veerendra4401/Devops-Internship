@@ -124,8 +124,4 @@ docker-compose up --scale service1=3
 
 ---
 
-<div align="center">
-Built with ❤️ for modern microservices
-</div>
-
 
