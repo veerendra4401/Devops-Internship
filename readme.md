@@ -1,4 +1,4 @@
-# 🌟 Microservices with Nginx Reverse Proxy
+# 🌟Nginx Reverse Proxy Internship
 
 A modern, production-ready microservices demo showcasing Nginx reverse proxy with Go and Python services.
 
