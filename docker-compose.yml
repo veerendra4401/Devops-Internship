@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - service1
+      - service2
+    networks:
+      - app_network
+
+  service1:
+    build:
+      context: ./service_1
+    expose:
+      - "8001"
+    networks:
+      - app_network
+
+  service2:
+    build:
+      context: ./service_2
+    expose:
+      - "8002"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge 
