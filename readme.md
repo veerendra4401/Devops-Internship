@@ -8,6 +8,7 @@ A modern, production-ready microservices demo showcasing Nginx reverse proxy wit
 - 🔒 **Secure**: Internal services protected, only Nginx exposed
 - 📊 **Monitored**: Health checks and detailed logging
 - 🚀 **Scalable**: Easy horizontal scaling with Docker Compose
+- ⚡ **Modern Python**: Using uv for 10-100x faster dependency management
 
 ## 🏗️ Architecture
 
@@ -83,8 +84,13 @@ log_format custom '$time_local - $request_uri - $status';
 - Only port 8080 exposed
 - Secure service isolation
 
-### 4. Docker Configuration
-- Optimized Dockerfiles
+### 4. Modern Development Tools
+- **uv for Python Service**:
+  - 10-100x faster than pip
+  - Better dependency resolution
+  - Reproducible builds
+  - Multi-stage Docker builds
+  - See `service_2/README.md` for details
 - Bridge networking
 - Easy scaling support
 
@@ -98,9 +104,11 @@ log_format custom '$time_local - $request_uri - $status';
 ├── service_1/          # Go service
 │   ├── main.go        # Service code
 │   └── Dockerfile     # Go setup
-└── service_2/         # Python service
+└── service_2/         # Python service with uv
     ├── app.py        # Flask code
-    └── Dockerfile    # Python setup
+    ├── pyproject.toml # Python project config
+    ├── requirements.txt # Pinned dependencies
+    └── Dockerfile    # Multi-stage uv setup
 ```
 
 ## 🔍 Monitoring & Logs
@@ -121,6 +129,15 @@ Scale any service:
 # Run 3 instances of service1
 docker-compose up --scale service1=3
 ```
+
+## 🔧 Development Notes
+
+### Python Service (service_2)
+Uses modern Python tooling with uv:
+- Fast dependency installation
+- Reproducible builds
+- Smaller Docker images
+- See `service_2/README.md` for detailed setup
 
 ---
 

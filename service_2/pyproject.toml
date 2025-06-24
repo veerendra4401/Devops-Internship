@@ -1,9 +1,16 @@
 [project]
-name = "service-1"
+name = "service-2"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python Flask microservice"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
-    "flask>=3.1.1",
+    "flask>=3.0.0",
 ]
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
+
+[tool.uv]
+python = "3.11"
