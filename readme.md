@@ -1,4 +1,4 @@
-# 🌟 Microservices with Nginx Reverse Proxy
+# 🌟Nginx Reverse Proxy Internship
 
 A modern, production-ready microservices demo showcasing Nginx reverse proxy with Go and Python services.
 
@@ -32,8 +32,8 @@ A modern, production-ready microservices demo showcasing Nginx reverse proxy wit
 
 1. **Clone & Build**
    ```bash
-   git clone <your-repo>
-   cd <your-repo>
+   git clone https://github.com/veerendra4401/Devops-Internship.git
+   cd Devops-Internship
    docker-compose up --build
    ```
 
@@ -140,9 +140,5 @@ Uses modern Python tooling with uv:
 - See `service_2/README.md` for detailed setup
 
 ---
-
-<div align="center">
-Built with ❤️ for modern microservices
-</div>
 
 
